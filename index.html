@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus online ticket</title>
+    <!-- daisy and tailwing -->
+     <link rel="stylesheet" href="styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="raleway_font">
+    <header class="max-w-4/5 mx-auto">
+        <section>
+            <div class="navbar bg-base-100 ">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                    </div>
+                    <a class="btn btn-ghost text-4xl font-extrabold">E-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="font-medium text-[18px] menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end ">
+                    <a class="btn bg-[#1DD1001A] text-[#1DD100] font-bold text-[20px]">Bus <img src="images/bus-icon.png"
+                            alt=""></a>
+                </div>
+            </div>
+        </section>
+        <section class="mt-8">
+            <div class="hero rounded-4xl h-[550px]"
+                style="background-image: url(images/banner.png);">
+                <!-- <div class="hero-overlay"></div> -->
+                <div class="hero-content text-neutral-content text-center">
+                    <div class="max-w-[750px]">
+                        <h1 class="mb-5 text-[64px] font-extrabold">End-to-End Travel with <span class="text-[#1DD100]">Hanif Paribahan</span></h1>
+                        <p class="mb-7">
+                            Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .
+                        </p>
+                        <button class="btn bg-[#1DD100] font-bold">Buy Tickets</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- best offer -->
+         <section class="my-28 text-center">
+            <h2 class="text-3xl font-bold text-center ">Best offers for your</h2>
+            <div class="grid grid-cols-2 gap-6 my-10">
+                <!-- card-1 -->
+                <div class="rounded-3xl bg-amber-400 flex ">
+                    <div class="p-[50px]">
+                        <h1 class="inter_font text-4xl font-black">15% OFF</h1>
+                        <p class="font-semibold text-2xl">on your next purchase</p>
+                        <p class="font-medium text-[20px]">use by January 2024</p>
+                    </div>
+                    <img  src="images/cupon-devider.png" alt="">
+                    <div class="p-[50px]">
+                        <h2 class="text-3xl font-bold">NEW15</h2>
+                        <p class="text-2xl">Coupon Code</p>
+                    </div>
+                </div>
+                <!-- card-2 -->
+                <div class="rounded-3xl bg-[#F78C9C] flex ">
+                    <div class="p-[50px]">
+                        <h1 class="inter_font text-4xl font-black">20% OFF</h1>
+                        <p class="font-semibold text-2xl">on your next purchase</p>
+                        <p class="font-medium text-[20px]">use by January 2024</p>
+                    </div>
+                    <img  src="images/cupon-devider.png" alt="">
+                    <div class="p-[50px]">
+                        <h2 class="text-3xl font-bold">Couple 20</h2>
+                        <p class="text-2xl">Coupon Code</p>
+                    </div>
+                </div>
+                <div></div>
+            </div>
+            <button class="btn border-green-400 text-[#1DD100]">See All Offers</button>
+         </section>
+    </header>
+    <main class="border-green-400 border-t-4 rounded-4xl">
+        <!-- bust ticket -->
+        <section class="text-center max-w-4/5 mx-auto
+        mt-24 mb-20">
+            <h2 class="font-bold text-4xl">Hanif Paribahan</h2>
+            <p class="mb-12">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow
+            for a streamlined .</p>
+            
+            <div class="flex">
+                <!-- left pannel of ticket -->
+            <div class="w-3/4 flex flex-col justify-center ">
+                <div class="flex justify-between mb-6">
+                    <div class="flex">
+                        <img src="images/bus-logo.png" alt="">
+                        <div>
+                            <h3 class="font-bold text-3xl">Hanif Paribahan</h3>
+                            <p class="inter_font text-[18px]">Coach-009-WEB! AC_Business</p>
+                        </div>
+                    </div>
+                    <div class="flex w-[180px] justify-center items-center gap-1 bg-[#1DD1001A]">
+                        <img src="images/seat-green.png" alt="">
+                        <p class="text-green-500 font_inter font-bold"><span>40 </span>Seats left</p>
+                    </div>
+                </div>
+                <div class="p-8 space-y-4">
+                    <div class="flex justify-between">
+                        <p class="text-[18px]">Route</p>
+                        <h5 class="font-semibold text-[18px]">Dhaka-Sylhet</h5>
+                    </div>
+                    <hr>
+                    <div class="flex justify-between">
+                        <p class="text-[18px]">Departure Time</p>
+                        <h5 class="font-semibold text-[18px]">9:00 PM</h5>
+                    </div>
+                    <hr>
+                    <div class="flex justify-between">
+                        <p class="bg-gray-300 p-3 rounded-lg">Boarding Point-Laxmipur</p>
+                        <p class="bg-gray-300 p-3 rounded-lg">Dropping Point-Bogura</p>
+                        <p class="bg-gray-300 p-3 rounded-lg">Est. Time-11 Hour</p>
+                    </div>
+                </div>
+            </div>
+            <!-- info divider -->
+             <img src="images/info-devider.png" alt="">
+             <!-- right pannel -->
+              <div class="flex flex-col justify-center items-center">
+                    <img src="images/fare.png" alt="">
+                    <h3 class="font-bold text-4xl"><span>500</span> Taka</h3>
+                    <p class="font-semibold text-2xl">Per Seat</p>
+                </div>
+            </div>                    
+        </section>
+        <!-- seat plan -->
+         <section class="max-w-4/5 mx-auto mb-20">
+            <div class="flex">
+                <!-- left side -->
+            <div class="w-3/4 p-8 border-dashed border-r border-[#03071266]">
+                <h4 class="font-semibold text-2xl mb-2">Select Your Seat</h4>
+            
+                <div class="flex justify-between my-4 border-dashed border-t-2 border-b-2 py-4 px-2">
+                    <div class="flex items-center gap-1">
+                        <img src="images/seat-gray.png" alt="">
+                        Available
+                    </div>
+                    <div class="flex items-center gap-1 text-green-500">
+                        <img src="images/seat-green-filled.png" alt="">
+                        Selected
+                    </div>
+                </div>
+                <!-- seats -->
+                <div class="grid grid-cols-5 gap-10">
+                    <button class="col-end-6 btn"><img src="images/tabler-icon-steering-wheel.png" alt=""></button>
+                    <h1>A</h1>
+                    <button class="site btn">A1</button>
+                    <button class="site btn">A2</button>
+                    <button class="site btn">A3</button>
+                    <button class="site btn">A4</button>
+                    <h1>B</h1>
+                    <button class="site btn">B1</button>
+                    <button class="site btn">B2</button>
+                    <button class="site btn">B3</button>
+                    <button class="site btn">B4</button>
+                    <h1>C</h1>
+                    <button class="site btn">C1</button>
+                    <button class="site btn">C2</button>
+                    <button class="site btn">C3</button>
+                    <button class="site btn">C4</button>
+                    <h1>D</h1>
+                    <button class="site btn">D1</button>
+                    <button class="site btn">D2</button>
+                    <button class="site btn">D3</button>
+                    <button class="site btn">D4</button>
+                    <h1>E</h1>
+                    <button class="site btn">E1</button>
+                    <button class="site btn">E2</button>
+                    <button class="site btn">E3</button>
+                    <button class="site btn">E4</button>
+                    <h1>F</h1>
+                    <button class="site btn">F1</button>
+                    <button class="site btn">F2</button>
+                    <button class="site btn">F3</button>
+                    <button class="site btn">F4</button>
+                    <h1>G</h1>
+                    <button class="site btn">G1</button>
+                    <button class="site btn">G2</button>
+                    <button class="site btn">G3</button>
+                    <button class="site btn">G4</button>
+                    <h1>H</h1>
+                    <button class="site btn">H1</button>
+                    <button class="site btn">H2</button>
+                    <button class="site btn">H3</button>
+                    <button class="site btn">H4</button>
+                    <h1>I</h1>
+                    <button class="site btn">I1</button>
+                    <button class="site btn">I2</button>
+                    <button class="site btn">I3</button>
+                    <button class="site btn">I4</button>
+                    <h1>J</h1>
+                    <button class="site btn">J1</button>
+                    <button class="site btn">J2</button>
+                    <button class="site btn">J3</button>
+                    <button class="site btn">J4</button>
+                </div>
+            </div>
+
+            <!-- ticket confirming right side -->
+             <div class="p-8">
+                <h4 class="font-semibold text-2xl mb-2">Booking Your Seat</h4>
+                <div class="overflow-x-auto">
+                    <table class="table inter_font">
+                        <!-- head -->
+                        <thead class="text-lg border-dashed border-b-2">
+                            <tr>
+                                <th>Seat</th>
+                                <th>Class</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-lg border-b-2">
+                            <tr>
+                                <td class="">C2</td>
+                                <td>Economy</td>
+                                <td class="">550</td>
+                            </tr>
+                            <tr>
+                                <td class="">C2</td>
+                                <td>Economy</td>
+                                <td class="">550</td>
+                            </tr>
+                        </tbody>
+                        <tfoot class="text-lg">
+                            <tr>
+                                <td class="">Total Price</td>
+                                <td></td>
+                                <td class="">BDT <span>1100</span></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <!-- coupon input field -->
+                 <div class="my-6">
+                    <div class="flex justify-between p-2 bg-gray-100 rounded-2xl">
+                        <input class="border-none" type="text" placeholder="Have any Coupon?">
+                        <button class="btn bg-[#1DD100] text-white inter_font font-semibold rounded-lg">Apply</button>
+                    </div>
+                    <div class="flex justify-between inter_font">
+                        <p>Grand Total</p>
+                        <p>BDT <span>1100</span></p>
+                    </div>
+                 </div>
+
+                 <!-- passenger info input field -->
+                  <div>
+                    <form action="">
+                        Passenger name*
+                        <br>
+                        <input type="text" placeholder="Enter your name" class="rounded-lg border-[#0307121A] w-full p-2" required>
+                        <br>
+                        Phone Number*
+                        <br>
+                        <input type="number" placeholder="Enter your phone number" class="rounded-lg border-[#0307121A] w-full p-2" required>
+                        <br>
+                        Email ID
+                        <br>
+                        <input type="email" placeholder="Enter your email id" class="rounded-lg border-[#0307121A] w-full p-2">
+                        <br>
+                        <button class="btn w-full bg-[#1DD100] rounded-2xl mt-6">Next</button>
+                    </form>
+                  </div>
+             </div>
+            </div>
+         </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
