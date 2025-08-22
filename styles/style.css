@@ -6,3 +6,9 @@
 .inter_font{
     font-family: "Inter", sans-serif;
 }
+
+.button{
+    background-color: #F7F8F8;
+    padding: 17px 44px 17px 45px;
+
+}
