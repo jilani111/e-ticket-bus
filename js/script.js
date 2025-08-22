@@ -31,10 +31,18 @@
     
 //}
 
+
+
 //remove hide class 
 function showElementById(elementId){
     const element = document.getElementById(elementId);
-    element.classList.remove('hidden')
+    element.classList.remove('hidden');
+}
+
+//add hide class
+function hideElementById(elementId){
+    const element = document.getElementById(elementId);
+    element.classList.add('hidden');
 }
 
 //get value by id
@@ -138,4 +146,32 @@ function selectSit(button){
       if(selectedSeats === 4){
         applyCoupon();
       }
+}
+
+//open modal after click 'next' button
+function openModal(){
+    const passangerName = document.getElementById('name').value.trim();
+    const passangerPhone = document.getElementById('phone').value.trim();
+    const passangerMail = document.getElementById('email').value.trim();
+
+    if(passangerName === "" || passangerPhone === ""){
+        alert("Please provide your name and phone number!");
+        return;
+    }
+
+    const modal = document.getElementById('success_modal');
+    hideElementById('header');
+    hideElementById('main');
+    showElementById('success_modal');
+    modal.classList.add('flex');
+}
+
+//close modal
+function closeModal(){
+    const modal = document.getElementById('success_modal');
+    hideElementById('success_modal');
+    modal.classList.remove('flex');
+    showElementById('header');
+    showElementById('main');
+
 }

@@ -10,7 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body class="raleway_font">
-    <header class="max-w-4/5 mx-auto">
+    <header id="header" class="max-w-4/5 mx-auto">
         <section>
             <div class="navbar bg-base-100 ">
                 <div class="navbar-start">
@@ -89,7 +89,7 @@
             <button class="btn border-green-400 text-[#1DD100]">See All Offers</button>
          </section>
     </header>
-    <main class="border-green-400 border-t-4 rounded-4xl">
+    <main id="main" class="border-green-400 border-t-4 rounded-4xl">
         <!-- bus ticket -->
         <section id="bus_ticket" class="text-center max-w-4/5 mx-auto
         mt-24 mb-20">
@@ -280,17 +280,17 @@
                     <form action="">
                         Passenger name*
                         <br>
-                        <input type="text" placeholder="Enter your name" class="rounded-lg border-[#0307121A] w-full p-2" required>
+                        <input id="name" type="text" placeholder="Enter your name" class="rounded-lg border-[#0307121A] w-full p-2" required>
                         <br>
                         Phone Number*
                         <br>
-                        <input type="number" placeholder="Enter your phone number" class="rounded-lg border-[#0307121A] w-full p-2" required>
+                        <input id="phone" type="number" placeholder="Enter your phone number" class="rounded-lg border-[#0307121A] w-full p-2" required>
                         <br>
                         Email ID
                         <br>
-                        <input type="email" placeholder="Enter your email id" class="rounded-lg border-[#0307121A] w-full p-2">
+                        <input id="email" type="email" placeholder="Enter your email id" class="rounded-lg border-[#0307121A] w-full p-2">
                         <br>
-                        <button class="btn w-full bg-[#1DD100] rounded-2xl mt-6">Next</button>
+                        <button type="button" onclick="openModal()" class="btn w-full bg-[#1DD100] rounded-2xl mt-6">Next</button>
                     </form>
                   </div>
              </div>
@@ -299,15 +299,15 @@
          
     </main>
     <!-- success modal -->
-        <section class=" bg-gray-100 p-20 hidden">
-            <div class="text-center flex flex-col items-center w-1/2 mx-auto rounded-4xl p-10 bg-white">
+        <section id="success_modal" class="min-h-screen bg-gray-100 p-20 hidden">
+            <div class="text-center flex flex-col items-center justify-center w-1/2 mx-auto rounded-4xl p-10 bg-white">
                 <img src="images/success.png" alt="">
                 <div class="mt-5">
                     <h3 class="font-bold text-2xl text-[#27AE60]">SUCCESS</h3>
                     <h4 class="font-medium text-[20px]">Thank you for Booking Our Bus Seats.</h4>
                     <h4 class="font-medium text-[20px]">We are working hard to find the best service and deals for you.</h4>
                     <p>Shortly you will find a confirmation in your email.</p>
-                    <button class="btn bg-[#27AE60] text-white rounded-full px-[40px] py-[15px]
+                    <button type="button" onclick="closeModal()" class="btn bg-[#27AE60] text-white rounded-full px-[40px] py-[15px]
                     mt-5">Continue</button>
                 </div>
             </div>
