@@ -44,8 +44,44 @@ function getValueById(id){
 }
 
 //set value by id
-function setValueById(id, seatCode){
-    document.getElementById(id).innerText = seatCode;
+function setValueById(id, value){
+    document.getElementById(id).innerText = value;
+}
+
+//discount price field
+function discount(discountPrice){
+    setValueById('discount_price', discountPrice);
+    showElementById('discount_field');
+}
+
+//apply coupun
+function applyCoupon(){
+    //enable apply button
+    const btn = document.getElementById('apply_coupon_btn');
+    btn.disabled = false;
+
+    //access coupon field
+    btn.addEventListener('click', function () {
+        const couponInputField = document.getElementById('coupon_field');
+        const couponText = couponInputField.value.toUpperCase();
+        //remove space between coupon code
+        const couponCode = couponText.split(" ").join("");
+        console.log(couponCode);
+
+        if(couponText === 'NEW15'){
+            const discountPrice = totalPrice * .15;
+            discount(discountPrice);
+            const grandPrice = totalPrice - discountPrice;
+            setValueById('grand_price', grandPrice);
+        }
+        if(couponText === 'COUPLE20'){
+            const discountPrice = totalPrice * .2;
+            discount(discountPrice);
+            const grandPrice = totalPrice - discountPrice;
+            setValueById('grand_price', grandPrice);
+        }
+        
+    })
 }
 
 let availableSeats = 40;
@@ -72,8 +108,9 @@ function selectSit(button){
         //set total price after selection
         document.getElementById('total_price').innerText = totalPrice;
       }
-      console.log(selectedSeats);
+    //   console.log(selectedSeats);
 
+    //display selected seat
       if(selectedSeats === 1){
         //get seat code by id
       const seatCode = getValueById(button.id);
@@ -95,5 +132,10 @@ function selectSit(button){
       const seatCode = getValueById(button.id);
       setValueById('sit_4', seatCode);
       showElementById('sit_4_info');
+      }
+
+      //apply coupon if selectedSeat = 4
+      if(selectedSeats === 4){
+        applyCoupon();
       }
 }

@@ -259,14 +259,19 @@
                     </table>
                 </div>
                 <!-- coupon input field -->
-                 <div class="my-6">
+                 <div class="my-4">
                     <div class="flex justify-between p-2 bg-gray-100 rounded-2xl">
-                        <input class="border-none" type="text" placeholder="Have any Coupon?">
-                        <button class="btn bg-[#1DD100] text-white inter_font font-semibold rounded-lg" disabled>Apply</button>
+                        <input id="coupon_field" class="border-none" type="text" placeholder="Have any Coupon?">
+                        <button id="apply_coupon_btn" class="btn bg-[#1DD100] text-white inter_font font-semibold rounded-lg" disabled>Apply</button>
                     </div>
-                    <div class="flex justify-between inter_font">
+                    <!-- discount price hidden -->
+                    <div id="discount_field" class="flex justify-between inter_font mt-4 hidden">
+                        <p>Discount</p>
+                        <p>BDT <span id="discount_price"></span></p>
+                    </div>
+                    <div class="flex justify-between inter_font mt-2">
                         <p>Grand Total</p>
-                        <p>BDT <span>1100</span></p>
+                        <p>BDT <span id="grand_price"></span></p>
                     </div>
                  </div>
 
